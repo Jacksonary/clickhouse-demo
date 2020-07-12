@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import java.util.Date;
 import java.util.List;
 import org.example.dao.mapper.ShopMapper;
 import org.example.dao.model.Shop;
@@ -32,7 +33,7 @@ public class ShopController {
 
     @PostMapping("")
     public Shop create(@RequestBody Shop shop) {
-        shop.setId(111111111L);
+        shop.setId(1111111111L);
         shopMapper.insertSelective(shop);
         return shop;
     }
@@ -40,6 +41,7 @@ public class ShopController {
     @PutMapping("/{id}")
     public Shop modify(@PathVariable("id") Long id, @RequestBody Shop shop) {
         shop.setId(id);
+        shop.setUpdateTime(new Date());
         shopMapper.updateSelectiveById(shop);
 
         return shop;

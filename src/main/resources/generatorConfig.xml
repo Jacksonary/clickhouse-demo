@@ -31,7 +31,7 @@
       <property name="enableSubPackages" value="true"/>
     </javaClientGenerator>
 
-    <table tableName="shop" domainObjectName="Shop"
+    <table tableName="analyze_event_after_search" domainObjectName="AnalyzeEventAfterSearch"
       enableInsert="true"
       enableSelectByPrimaryKey="true"
       enableUpdateByPrimaryKey="true"
