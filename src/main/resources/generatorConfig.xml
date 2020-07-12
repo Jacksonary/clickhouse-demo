@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+  <context id="gworkspaceTables" targetRuntime="MyBatis3">
+    <jdbcConnection driverClass="ru.yandex.clickhouse.ClickHouseDriver"
+      connectionURL="jdbc:clickhouse://10.5.3.28:8123/goujianwu"
+      userId="default">
+    </jdbcConnection>
+
+    <javaTypeResolver>
+      <property name="forceBigDecimals" value="false"/>
+    </javaTypeResolver>
+
+    <javaModelGenerator targetPackage="org.example.dao.model"
+      targetProject="./src/main/java">
+      <property name="enableSubPackages" value="true"/>
+      <property name="trimStrings" value="true"/>
+    </javaModelGenerator>
+
+    <sqlMapGenerator targetPackage="org.example.dao.mapper"
+      targetProject="./src/main/resources">
+      <property name="enableSubPackages" value="true"/>
+    </sqlMapGenerator>
+
+    <javaClientGenerator targetPackage="org.example.dao.mapper"
+      targetProject="./src/main/java"
+      type="XMLMAPPER">
+      <property name="enableSubPackages" value="true"/>
+    </javaClientGenerator>
+
+    <table tableName="shop" domainObjectName="Shop"
+      enableInsert="true"
+      enableSelectByPrimaryKey="true"
+      enableUpdateByPrimaryKey="true"
+      enableDeleteByPrimaryKey="true"
+      enableSelectByExample="false"
+      enableDeleteByExample="false"
+      enableCountByExample="false"
+      enableUpdateByExample="false"
+      selectByPrimaryKeyQueryId="false"
+      selectByExampleQueryId="false"/>
+  </context>
+</generatorConfiguration>
