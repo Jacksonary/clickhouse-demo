@@ -63,6 +63,18 @@ CREATE DATABASE [IF NOT EXISTS] db_name [ON CLUSTER cluster];
 CREATE database test_database;
 ```
 
+此外，clickhouse支持外挂表，比如将mysql的某个库外挂到clickhouse中：
+
+```sql
+CREATE DATABASE [IF NOT EXISTS] db_name [ON CLUSTER cluster]
+ENGINE = MySQL('host:port', ['database' | database], 'user', 'password')
+
+-- 示例
+CREATE DATABASE test_mysql
+ENGINE = MySQL('10.5.3.28:3306', 'test_in_mysql', 'admin', 'admin')
+```
+注：只允许对表进行`INSERT`和`SELECT`
+
 ### 4.2 表
 
 #### 4.2.1 表创建
