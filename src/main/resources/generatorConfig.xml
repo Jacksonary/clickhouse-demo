@@ -6,7 +6,7 @@
 <generatorConfiguration>
   <context id="gworkspaceTables" targetRuntime="MyBatis3">
     <jdbcConnection driverClass="ru.yandex.clickhouse.ClickHouseDriver"
-      connectionURL="jdbc:clickhouse://10.5.3.28:8123/goujianwu"
+      connectionURL="jdbc:clickhouse://10.5.3.28:8123/goujianku"
       userId="default">
     </jdbcConnection>
 
@@ -31,7 +31,7 @@
       <property name="enableSubPackages" value="true"/>
     </javaClientGenerator>
 
-    <table tableName="analyze_event_after_search" domainObjectName="AnalyzeEventAfterSearch"
+    <table tableName="category" domainObjectName="Category"
       enableInsert="true"
       enableSelectByPrimaryKey="true"
       enableUpdateByPrimaryKey="true"

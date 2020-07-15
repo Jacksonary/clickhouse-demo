@@ -133,6 +133,12 @@ SETTINGS index_granularity = 8192;
 * `SETTINGS`：影响 性能的额外参数。
 * `GRANULARITY`：索引粒度参数。
 
+```sql
+-- 删除数据库/表
+DROP DATABASE [IF EXISTS] db [ON CLUSTER cluster]
+```
+
+
 #### 4.2.2 数据的增、删、改、查
 
 &emsp;表结构以及数据本身的操作如下：

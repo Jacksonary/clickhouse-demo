@@ -11,6 +11,8 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "spring.datasource.click")
 public class JdbcParamConfig {
+    private String userName;
+    private String password;
     private String driverClassName ;
     private String url ;
     private Integer initialSize ;
@@ -24,6 +26,22 @@ public class JdbcParamConfig {
 
     public void setDriverClassName(String driverClassName) {
         this.driverClassName = driverClassName;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getUrl() {
