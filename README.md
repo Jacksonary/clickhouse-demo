@@ -216,3 +216,4 @@ clickhouse中几种常用基本数据类型：
 >https://programmer.help/blogs/5d9d204350ade.html
 >https://www.cnblogs.com/huanghanyu/p/12895592.html
 >https://help.aliyun.com/document_detail/146116.html?spm=a2c4g.11186623.6.586.206110454hgEWI
+> 配置多数据源参考文档：https://www.jianshu.com/p/ff5af6c59365?utm_source=oschina-app
