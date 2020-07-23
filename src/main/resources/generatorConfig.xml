@@ -5,8 +5,9 @@
 
 <generatorConfiguration>
   <context id="gworkspaceTables" targetRuntime="MyBatis3">
+    <!--      connectionURL="jdbc:clickhouse://10.5.3.28:8123/goujianku"-->
     <jdbcConnection driverClass="ru.yandex.clickhouse.ClickHouseDriver"
-      connectionURL="jdbc:clickhouse://10.5.3.28:8123/goujianku"
+      connectionURL="jdbc:clickhouse://10.5.3.28:8123/default"
       userId="default">
     </jdbcConnection>
 
@@ -14,24 +15,24 @@
       <property name="forceBigDecimals" value="false"/>
     </javaTypeResolver>
 
-    <javaModelGenerator targetPackage="org.example.dao.model"
+    <javaModelGenerator targetPackage="org.example.dao.db2.model"
       targetProject="./src/main/java">
       <property name="enableSubPackages" value="true"/>
       <property name="trimStrings" value="true"/>
     </javaModelGenerator>
 
-    <sqlMapGenerator targetPackage="org.example.dao.mapper"
+    <sqlMapGenerator targetPackage="org.example.dao.db2.mapper"
       targetProject="./src/main/resources">
       <property name="enableSubPackages" value="true"/>
     </sqlMapGenerator>
 
-    <javaClientGenerator targetPackage="org.example.dao.mapper"
+    <javaClientGenerator targetPackage="org.example.dao.db2.mapper"
       targetProject="./src/main/java"
       type="XMLMAPPER">
       <property name="enableSubPackages" value="true"/>
     </javaClientGenerator>
 
-    <table tableName="category" domainObjectName="Category"
+    <table tableName="test_merge_tree" domainObjectName="TestMergeTree"
       enableInsert="true"
       enableSelectByPrimaryKey="true"
       enableUpdateByPrimaryKey="true"

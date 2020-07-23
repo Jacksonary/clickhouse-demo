@@ -1,6 +1,6 @@
-package org.example.dao.mapper;
+package org.example.dao.db1.mapper;
 
-import org.example.dao.model.Category;
+import org.example.dao.db1.model.Category;
 
 public interface CategoryMapper {
     /**

@@ -1,9 +1,9 @@
 package org.example.controller;
 
 import java.util.Date;
-import java.util.List;
-import org.example.dao.mapper.ShopMapper;
-import org.example.dao.model.Shop;
+
+import org.example.dao.db1.mapper.ShopMapper;
+import org.example.dao.db1.model.Shop;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,8 +1,9 @@
 package org.example.controller;
 
 import java.util.Date;
-import org.example.dao.mapper.ComponentOperationMapper;
-import org.example.dao.model.ComponentOperation;
+
+import org.example.dao.db1.mapper.ComponentOperationMapper;
+import org.example.dao.db1.model.ComponentOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

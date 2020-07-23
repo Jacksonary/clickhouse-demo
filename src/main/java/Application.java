@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @description
  */
 @SpringBootApplication(scanBasePackages = {"org.example"})
-@MapperScan(basePackages = {"org.example.dao.mapper"})
+@MapperScan(basePackages = {"org.example.dao.db1.mapper"})
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);

@@ -1,6 +1,6 @@
-package org.example.dao.mapper;
+package org.example.dao.db1.mapper;
 
-import org.example.dao.model.Shop;
+import org.example.dao.db1.model.Shop;
 
 public interface ShopMapper {
     /**

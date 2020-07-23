@@ -5,7 +5,7 @@
       <driver-ref>clickhouse</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>ru.yandex.clickhouse.ClickHouseDriver</jdbc-driver>
-      <jdbc-url>jdbc:clickhouse://10.5.3.28:8123/goujianwu</jdbc-url>
+      <jdbc-url>jdbc:clickhouse://10.5.3.28:8123/</jdbc-url>
     </data-source>
   </component>
 </project>

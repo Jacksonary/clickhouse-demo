@@ -1,4 +1,4 @@
-package org.example.dao.model;
+package org.example.dao.db1.model;
 
 import java.util.Date;
 

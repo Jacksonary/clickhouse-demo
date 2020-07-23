@@ -1,7 +1,7 @@
-package org.example.dao.mapper;
+package org.example.dao.db1.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.example.dao.model.ComponentOperation;
+import org.example.dao.db1.model.ComponentOperation;
 
 /**
  * @author liuwg-a
