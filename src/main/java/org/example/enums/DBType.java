@@ -9,6 +9,7 @@ public enum DBType {
     db1("clickhouse-mysql"),
     db2("clickhouse-default");
     String description;
+
     DBType(String description) {
         this.description = description;
     }

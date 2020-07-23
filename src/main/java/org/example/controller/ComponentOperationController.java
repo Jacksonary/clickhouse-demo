@@ -1,7 +1,6 @@
 package org.example.controller;
 
 import java.util.Date;
-
 import org.example.dao.db1.mapper.ComponentOperationMapper;
 import org.example.dao.db1.model.ComponentOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,7 +40,8 @@ public class ComponentOperationController {
     }
 
     @PutMapping("/{id}")
-    public ComponentOperation modify(@PathVariable("id") Long id, @RequestBody ComponentOperation componentOperation) {
+    public ComponentOperation modify(@PathVariable("id") Long id,
+        @RequestBody ComponentOperation componentOperation) {
         componentOperation.setId(id);
         componentOperationMapper.updateByPrimaryKeySelective(componentOperation);
 

@@ -3,7 +3,6 @@
   <component name="EclipseCodeFormatterProjectSettings">
     <option name="projectSpecificProfile">
       <ProjectSpecificProfile>
-        <option name="formatter" value="ECLIPSE" />
         <option name="pathToConfigFileJava" value="F:/myWork/广联达-上海闵行/构件坞项目组/广联达java代码风格/eclipse-codestyle-alibaba.xml" />
         <option name="selectedJavaProfile" value="P3C-CodeStyle" />
       </ProjectSpecificProfile>

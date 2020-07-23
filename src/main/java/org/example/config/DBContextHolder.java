@@ -8,6 +8,7 @@ import org.example.enums.DBType;
  * @description
  */
 public class DBContextHolder {
+
     private static final ThreadLocal<DBType> DB_CONTEXT_HOLDER = new ThreadLocal<>();
 
     public static void set(DBType dbType) {

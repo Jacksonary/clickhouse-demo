@@ -23,7 +23,6 @@ public class DatasourceSwitchAspect {
 
     /**
      * 定义注入所有 org.example.dao.db1.mapper 下所有类的方法
-     *
      */
     @Pointcut("execution(* org.example.dao.db1.mapper..*.*(..))")
     private void db1Aspect() {

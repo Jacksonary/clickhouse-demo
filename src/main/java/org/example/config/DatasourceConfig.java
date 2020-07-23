@@ -1,10 +1,9 @@
 package org.example.config;
 
+import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
 import java.util.HashMap;
 import java.util.Map;
-
 import javax.sql.DataSource;
-
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.type.JdbcType;
 import org.example.enums.DBType;
@@ -15,8 +14,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-
-import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
 
 /**
  * @author liuwg-a
@@ -42,8 +39,9 @@ public class DatasourceConfig {
 
     /**
      * 动态数据源配置
-     * @Primary 优先让 DataSource 指向这个 Datasource 的配置
+     *
      * @return
+     * @Primary 优先让 DataSource 指向这个 Datasource 的配置
      */
     @Bean
     public DataSource multipleDataSource(@Autowired DataSource db1, @Autowired DataSource db2) {
